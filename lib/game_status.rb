@@ -16,8 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  WIN_COMBINATIONS.each do |win_combo|
-    winner = board.include_in?(win_combo)
+    winner = board.include_in?(WIN_COMBINATIONS)
   end
   winner
 end
