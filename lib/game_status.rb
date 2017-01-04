@@ -14,3 +14,23 @@ WIN_COMBINATIONS = [
   [0,4,8], #diagonal
   [2,4,6] #diagonal
 ]
+
+def won(board)
+  WIN_COMBINATIONS.detect{|board| board.include?}
+end
+
+# def full
+# earn
+# end
+#
+# def draw
+#
+# end
+#
+# def over
+#
+# end
+#
+# def winner
+#
+# end
