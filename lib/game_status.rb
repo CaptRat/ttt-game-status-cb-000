@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.all?{|index| board[index]=="X" || board[index] == "O"}
-
+end
 # def won?(board)
 #    WIN_COMBINATIONS.detect do |win_combo|
 #      combo_1 = win_combo[0]
