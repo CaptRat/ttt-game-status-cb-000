@@ -19,8 +19,11 @@ WIN_COMBINATIONS = [
 combo_1 = win_combo[0]
 combo_2 = win_combo[1]
 combo_3 = win_combo[2]
+
 def won(board)
-    WIN_COMBINATIONS.
+    WIN_COMBINATIONS.each do
+      [win_combo]
+    end
 end
 
 # def full
