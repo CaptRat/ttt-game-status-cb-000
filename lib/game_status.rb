@@ -15,8 +15,12 @@ WIN_COMBINATIONS = [
   [2,4,6]  #diagonal
 ]
 
+
+combo_1 = win_combo[0]
+combo_2 = win_combo[1]
+combo_3 = win_combo[2]
 def won(board)
-    board.include?(WIN_COMBINATIONS)
+    WIN_COMBINATIONS.
 end
 
 # def full
