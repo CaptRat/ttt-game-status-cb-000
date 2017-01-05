@@ -15,9 +15,9 @@ WIN_COMBINATIONS = [
   [2,4,6]  #diagonal
 ]
 
-def won?(board)
-  WIN_COMBINATIONS.all?{|index| board[index]=="X" || board[index] == "O"}
-end
+# def won?(board)
+#   WIN_COMBINATIONS.all?{|index| board[index]=="X"} || {|index| board[index] == "O"}
+# end
 # def won?(board)
 #    WIN_COMBINATIONS.detect do |win_combo|
 #      combo_1 = win_combo[0]
@@ -29,7 +29,15 @@ end
 #      position_3 = board[combo_3]
 #    end
 # end
-
+def won?(board)
+#return false/nil if there is no win combination present in the board
+WIN_COMBINATIONS.each do |combo|
+	if combo.all? {|i| board[i]=="O"} || {|i| board[i]=="X"}
+	else
+ 	 false
+	end
+false
+end
 # def full
 #
 # end
