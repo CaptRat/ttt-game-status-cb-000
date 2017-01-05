@@ -30,13 +30,13 @@ WIN_COMBINATIONS = [
 #    end
 # end
 def won?(board)
-#return false/nil if there is no win combination present in the board
-WIN_COMBINATIONS.each do |combo|
-	if combo.all? {|i| board[i]=="O"} || {|i| board[i]=="X"}
-	else
- 	 false
-	end
-false
+  WIN_COMBINATIONS.each do |combo|
+	  if combo.all? {|index| board[index]=="O"} || {|index| board[index]=="X"}
+      combo
+	  else
+ 	    false
+	  end
+  end
 end
 # def full
 #
