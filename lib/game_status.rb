@@ -19,6 +19,9 @@ WIN_COMBINATIONS = [
 #   WIN_COMBINATIONS.all?{|index| board[index]=="X"} || {|index| board[index] == "O"}
 # end
 # def won?(board)
+#   WIN_COMBINATIONS.detect {|c| c.all?{|p| board[p]=="X"} || c.all?{|p| board[p]=="O"}}
+# end
+# def won?(board)
 #    WIN_COMBINATIONS.detect do |win_combo|
 #      combo_1 = win_combo[0]
 #      combo_2 = win_combo[1]
@@ -39,10 +42,13 @@ def won?(board)
   end
   false
 end
-# def full
-#
-# end
-#
+
+def full(board)
+  if board[index].all? {"O"} || "X"}
+    return true
+  else
+end
+
 # def draw
 #
 # end
